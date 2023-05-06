@@ -16,8 +16,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
         <!-- === Share Script === -->
-        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=643c13fa7e455e00129f1077&product=inline-share-buttons&source=platform" async="async"></script>
-        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=645235b5d188f60019105986&product=sticky-share-buttons&source=platform" async="async"></script>
+        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6454b9407a3f120019cd13bc&product=inline-share-buttons&source=platform" async="async"></script>
+        <!-- <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63992d8ae6edea00197b17bd&product=inline-share-buttons' async='async'></script> -->
 
         <!-- === Boxicons CSS === -->
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -32,7 +32,7 @@
 
     <body>
         <!-- Awal Navbar -->
-        <div>
+        <div class="navbar-luar">
             <div class="nav-bar shadow-sm">
                 <i class='bx bx-menu sidebarOpen' ></i>
                 <span class="logo navLogo">
@@ -101,10 +101,7 @@
         </div>
         <!-- Akhir Navbar -->
 
-        <!-- Button share-side -->
-        <div class="share-side">
-            <div class="sharethis-sticky-share-buttons"></div>
-        </div>
+        
 
         <!-- Awal Main -->
         <main>
@@ -130,18 +127,16 @@
                 </p>
 
                 <div class="share-btn mb-3">
-                    <div class="share-main">
-                        <div class="share-main sharethis-inline-share-buttons mb-3 text-start"></div>
-                    </div>
-                    <div class="share-side">
-                        <div class="share-main sharethis-inline-share-buttons mb-3 text-center"></div>
-                    </div>
+                    <div class="sharethis-inline-share-buttons"></div>
                 </div>
             </div>
 
             <img src="img/kendaraan 1.jpg" class="kendaraan1 rounded mx-auto d-block mb-3" alt="kndaraan1">
 
-            <!-- <div class="sharethis-inline-share-buttons mb-3 share text-start share-btn"></div> -->
+            
+            <!-- <div class="share-side">
+                <div class="sharethis-sticky-share-buttons"></div>
+            </div> -->
             <div class="row isi justify-content-between">
                 <div class="col-2 daftar">
                     <div class="content-list">
@@ -166,7 +161,7 @@
                         </nav>
                     </div>
                 </div>
-
+                
                 <div class="col-9 artikel" data-bs-spy="scroll" data-bs-target="#daftar-isi" tabindex="0">
                     <div class="bingkai">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ducimus magni, quos mollitia deleniti excepturi saepe non neque ullam cum recusandae voluptatem atque. Tempora, atque. Quod magni, dolores, ab aliquid ipsa cupiditate porro optio possimus rem sequi deleniti quis in? Rem nam soluta architecto omnis laborum ut libero officia, nostrum sit! Praesentium quam deleniti consequatur, ipsum deserunt nulla repellendus ullam aperiam earum corporis. Nobis consequuntur, iste est atque at cupiditate maxime aliquam nam eaque qui asperiores ea! Minus ex exercitationem illum eveniet? Odio, dolorum, aspernatur quod soluta facilis ea blanditiis aliquam sequi assumenda quos, consequuntur sit laboriosam. Optio, aliquid earum.</p>
@@ -235,7 +230,8 @@
                                     <label for="komentar" class="form-label">Komentar</label>
                                     <textarea class="form-control" id="komentar" rows="3" required></textarea>
                                 </div>
-                                <button type="button" class="btn btn-outline-primary">Kirim</button>
+                                <button type="button" class="btn tombol">Submit</button>
+                                
                             </form>
                         </div>
                     </div>

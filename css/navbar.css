@@ -47,18 +47,24 @@ body.dark{
 }
 
 /* === Navbar === */
+.navbar-luar{
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--nav-color);
+    border-bottom: 1px solid rgb(97, 97, 97);
+}
+
 .nav-bar{
     /* position: fixed; */
-    top: 0;
+    /* top: 0;
     right: 0;
-    left: 0;
-    height: 70px;
-    width: 100%;
+    left: 0; */
     background-color: var(--nav-color);
-    border: 1px solid rgb(231, 231, 231);
+    height: 70px;
+    width: 95%;
     z-index: 100;
-    margin: 0;
-    padding: 0 70px;
+    margin: 0 auto;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -276,12 +282,12 @@ body.dark .search-field i{
 /* Light Main Artikel */
 main {
     min-height: calc(100vh - 35px);
-    padding: 10px 30px 75px 30px;
+    padding: 10px 25px 75px 25px;
 }
 
 main .label-lokasi{
     background-color: #e9e8e8b6;
-    width: 90%;
+    width: 100%;
     border: 1px solid #cecccc;
     border-radius: 2px;
     padding: 2px 0 2px 5px;
@@ -291,28 +297,28 @@ main .label-lokasi{
 }
 
 main .head{
-    width: 90%;
-    justify-content: center;
+    width: 100%;
     margin: 0 auto;
 }
 
 main .head .info small{
+    text-align: justify;
     font-size: 15px;
 }
 
 main .kendaraan1{
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
-main .share-btn .share-main{
+/* main .share-btn .share-main{
     display: block;
 }
 main  .share-btn .share-side{
     display: none;
-}
+} */
 main .isi{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 0 10px 0;
 }
@@ -366,14 +372,12 @@ main .isi .artikel{
 
 /* Komentar */
 main .komentar{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 1rem;
 }
 
 .komentar .panel-komen{
-    /* padding: 1rem; */
-    /* border: 1px solid #dbdbdb; */
     border-radius: 5px;
     display: flex;
     width: 60%;
@@ -399,7 +403,15 @@ main .komentar{
 .komen .body{
     margin: 1rem;
 }
-
+.komen .body .tombol{
+    border: 1px solid var(--hov-color);
+    color: var(--hov-color);
+}
+.body .tombol:hover{
+    background-color: var(--hov-color);
+    color: white;
+    transition: 0.3s;
+}
 /* Body dark main */
 body.dark main{
     color: var(--text-color);
@@ -420,7 +432,6 @@ body.dark .daftar .body a.nav-link{
 
 body.dark .daftar .body a.active{
     color: white;
-    /* background-color: white; */
 }
 body.dark .isi .artikel{
     border: 0.5px solid #3b3b3b;
@@ -730,11 +741,14 @@ body.dark .footer-bottom a{
     }
 
     /* Main Mobile */
-    main .head .share-btn .share-main{
+    /* main .head .share-btn .share-main{
         display: none;
     }
     main .head .share-btn .share-side{
         display: block;
+    } */
+    main .head .info{
+        text-align: justify;
     }
 
     main .isi{
