@@ -20,7 +20,7 @@
     --main-color: rgb(0, 0, 0);
     --hov-color: rgb(0, 81, 255);
     --text-muted-color: #585555;
-    --primary-color-light: #F6F5FF;
+    --about-color: #b3d0ff;
 }
 
 body{
@@ -29,14 +29,14 @@ body{
 }
 
 body.dark{
-    --nav-color: #242526;
+    --nav-color: #2e2e2e;
     --side-nav: #242526;
     --text-color: #CCC;
     --search-bar: #242526;
     --main-color: #fff;
     --hov-color: rgb(255, 102, 0);
     --text-muted-color: #d4c9c9;
-    --primary-color-light: #3a3b3c;
+    --about-color:#f7a671;
 }
 .container{
     display: flex;
@@ -66,8 +66,8 @@ body.dark{
     justify-content: space-between;
 }
 
-body.dark .nav-bar{
-    border: 1px solid #2b2a2a;
+body.dark .navbar-luar{
+    border-bottom: 1px solid #2b2a2a;
 
 }
 
@@ -284,7 +284,7 @@ main {
 /* Jumbotron */
 .jumbotron{
     padding-top: 70px;
-    background-color: #b3d0ff;
+    background-color: var(--about-color);
 }
 .jumbotron .foto{
     margin: 0 auto;
@@ -300,8 +300,11 @@ main {
 .jumbotron p.nama{
     text-align: center;
     font-size: 25px;
-    font-weight: 400;
+    font-weight: bold;
     margin: 10px 0;
+}
+.jumbotron p.lead{
+    font-weight: 400;
 }
 
 /* About */
@@ -316,15 +319,41 @@ main {
     text-align: justify;
 }
 
+#about svg.onDark{
+    display: none;
+    transition: 0.5s;
+}
+#about svg.onLight{
+    display: block;
+    transition: 0.5s;
+}
+body.dark #about svg.onDark{
+    display: block;
+    transition: 0.5s;
+}
+body.dark #about svg.onLight{
+    display: none;
+    transition: 0.5s;
+}
 /* Contact */
 #contact{
-    background-color: #b3d0ff;
+    background-color: var(--about-color);
     padding-bottom: 30px;
 }
-
+#contact .body .tombol{
+    background-color: var(--hov-color);
+    color: white;
+    transition: 0.3s;
+}
+#contact .body .tombol:hover{
+    border: 1px solid var(--hov-color);
+    color: var(--hov-color);
+    background-color: transparent;
+    font-weight: bold;
+}
 /* === Footer === */
 footer{
-    background-color: fdfdfd;
+    background-color: #fdfdfd;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -431,6 +460,13 @@ body.dark footer{
 }
 body.dark .footer-container p{
     color: #e9660e;
+}
+body.dark .footer-sosial a{
+    background-color: #2e2e2e;
+}
+body.dark .footer-sosial a:hover{
+    background-color: var(--hov-color);
+    transition: 0.5s;
 }
 body.dark .footer-nav ul li a{
     color: #e9660e;

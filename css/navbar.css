@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;;
+    /* transition: all 0.3s ease;; */
 }
 
 
@@ -31,7 +31,7 @@ body{
 
 body.dark{
     --body-color: #18191A;
-    --nav-color: #242526;
+    --nav-color: #2e2e2e;
     --side-nav: #242526;
     --text-color: #CCC;
     --search-bar: #242526;
@@ -51,7 +51,7 @@ body.dark{
     width: 100%;
     margin: 0 auto;
     background-color: var(--nav-color);
-    border-bottom: 1px solid rgb(97, 97, 97);
+    border-bottom: 1px solid #ece9e9;
 }
 
 .nav-bar{
@@ -70,8 +70,8 @@ body.dark{
     justify-content: space-between;
 }
 
-body.dark .nav-bar{
-    border: 1px solid #2b2a2a;
+body.dark .navbar-luar{
+    border-bottom: 1px solid #3d3c3c;
 
 }
 
@@ -351,7 +351,7 @@ main .isi{
 
 main .daftar .body{
     border: none;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
 .daftar .body a.nav-link{
     color: var(--text-color);
@@ -415,7 +415,7 @@ main .komentar{
 /* Body dark main */
 body.dark main{
     color: var(--text-color);
-    background-color: var(--nav-color);
+    background-color: #242526;
 }
 body.dark main .label-lokasi{
     background-color: var(--nav-color);
@@ -546,6 +546,13 @@ body.dark footer{
 }
 body.dark .footer-container p{
     color: #e9660e;
+}
+body.dark .footer-sosial a{
+    background-color: #2e2e2e;
+}
+body.dark .footer-sosial a:hover{
+    background-color: var(--hov-color);
+    transition: 0.5s;
 }
 body.dark .footer-nav ul li a{
     color: #e9660e;
