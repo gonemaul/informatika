@@ -69,19 +69,19 @@ const body = document.querySelector('body'),
 
 // Chart
 // === Jenis kendaraan ===
-    var ctx = document.getElementById('PieChart').getContext('2d');
-    var myChart = new Chart(ctx, {
+    var cfg = document.getElementById('PieChart').getContext('2d');
+    var myChart = new Chart(cfg, {
         type: 'doughnut',
         data: {
             labels: ['Kendaraan Umum', 'Kendaraan Pribadi'],
-            datasets: [
-                {
+            datasets: [{
+                
                     label: '# of Votes',
-                    data: [7,73],
+                    data: [7, 73],
                     backgroundColor: ['#17BEBB', '#FFC914'],
                     borderWidth: 1
-                }
-            ]
+                }],
+                
         }
     });
 

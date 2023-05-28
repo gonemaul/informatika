@@ -165,10 +165,8 @@
           <hr>
           <div class="body">
               <p>
-                Perkenalkan nama saya Ahmad Hasby Maulana, Saya sekolah di SMK
-                Negeri 1 Kota Kediri. Saya dari kelas X TKJ 1. Saya tinggal di
-                Ds Sendang Kec. Banyakan Kab. Kediri. Saya memiliki hobi
-                ngoding, Kedepannya saya ingin menjadi seorang programmer.
+                Perkenalkan nama saya Ahmad Hasby Maulana, Saya dari kelas X TKJ 1, SMKN 1 Kota Kediri. Saya tinggal di
+                Ds Sendang Kec. Banyakan Kab. Kediri. Hobi saya adalah Ngoding, Saya berharap kedepannya saya menjadi seorang programmer.
               </p>
           </div>
         </div>
@@ -188,17 +186,16 @@
           <hr>
           <div class="body">
             <p>
-              Website ini saya buat dengan tujuan sebagai media hasil survei
-              mapel Informatika. Saya memilih menggunakan media website karena
-              saya hobi ngoding. Survei ini saya beri judul "Kendaraan Saat
+              Website ini saya buat dengan tujuan sebagai media penyampaian hasil survei
+              mapel Informatika yang telah saya lakukan. Saya memilih menggunakan media website karena menurut saya website bisa diakses kapanpun dan dimanapun tanpa harus download terlebih dahulu selagi ada akses internet dan alasan saya yang kedua adalah hobi saya ngoding, jadi saya ingin meperbanyak pengalaman ngoding saya. </p>
+              <p>Survei ini saya beri judul "Kendaraan Saat
               Bepergian", Alasan saya memilih survei ini karena masih banyak
               orang yang binggung dalam memilih kendaraan yang digunakan untuk
               bepergian keluar kota / mudik, Oleh karena itu saya ingin
-              memberi sedikit saran dengan melakukan survei ke beberapa orang.
-              Sebelumnya saya minta maaf jika desain atau tampilan website ini
-              kurang menarik, karena saya lebih condong ke backend jadinya
-              tidak terlalu bisa desain tampilan. Website ini saya buat dengan
-              konsep seperti website artikel atau berita.
+              memberi sedikit rekomendasi dengan melakukan survei ke beberapa orang.</p>
+              <p>Sebelumnya saya minta maaf jika desain atau tampilan website ini
+              kurang menarik, karena saya lebih minat ke Backend daripada Frontend jadinya
+              tampilannya tidak terlalu menarik, oleh karena itu saya mohon saran dan kritikannya, kalian bisa langsung menghubungi saya maupun tinggalkan pesan dikolom komentar artikel ini. Website ini saya buat dengan konsep seperti artikel atau blog denagn menggunakan HTMl, CSS dan sedikit Java Script.
             </p>
           </div>
         </div>
@@ -250,13 +247,14 @@
           <hr>
           <div class="row justify-content-center">
             <div class="col-md-5 body">
-              <form>
+              <form action="" method="post" name="ContactMe">
                 <div class="mb-3">
                   <label for="name" class="form-label">Nama Lengkap</label>
                   <input
                     type="text"
                     class="form-control"
                     id="name"
+                    name="nama"
                     aria-describedby="name"
                   />
                 </div>
@@ -266,15 +264,20 @@
                     type="email"
                     class="form-control"
                     id="email"
+                    name="email"
                     aria-describedby="email"
                     placeholder="name@example.com"
                   />
                 </div>
                 <div class="mb-3">
                   <label for="Pesan" class="form-label">Pesan</label>
-                  <textarea class="form-control" id="pesan" rows="3"></textarea>
+                  <textarea class="form-control" id="pesan" name="pesan" rows="3"></textarea>
                 </div>
-                <button type="button" class="btn tombol">Submit</button>
+                <button type="submit" class="btn tombol kirim">Submit</button>
+                <button class="btn btn-loading d-none" type="button">
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+              </button>
               </form>
             </div>
           </div>
@@ -282,6 +285,18 @@
       </section>
       <!-- === Akhir Contact === -->
     </main>
+    <section class="modal-popup">
+      <div class="modal-box">
+        <i class="fa-regular fa-circle-check"></i>
+        <h2>Terima Kasih</h2>
+        <h3>Pesan anda sudah kami terima!</h3>
+
+        <div class="buttons">
+          <button class="close-btn">Close</button>
+          <!-- <button>Open File</button> -->
+        </div>
+      </div>
+    </section>
     <!-- Akhir Main -->
 
     <!-- Awal Footer -->
@@ -319,13 +334,14 @@
     </footer>
     <!-- Akhir Footer -->
 
+    
+
     <!-- === Script Bootstrap === -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script src="js/jquery-min.js"></script>
-    <script src="js/about.js"></script>
+    <script src="JS/about.js"></script>
   </body>
 </html>

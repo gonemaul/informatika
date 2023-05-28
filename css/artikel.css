@@ -592,13 +592,13 @@ main .komentar{
     display: flex;
     width: 100%;
     margin: 50px 0 0 0;
-    padding: 0;
+    padding: 15px;
 }
 
 .komentar .panel-komen{
     border-radius: 5px;
     display: flex;
-    width: 50%;
+    width: 60%;
     margin: 0;
 }
 

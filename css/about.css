@@ -489,7 +489,7 @@ body.dark .to-top{
     border-top: 3px solid white;
 }
 #about-website .body p{
-    text-align: center;
+    text-align: justify;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -591,6 +591,101 @@ body.dark .to-top{
     color: var(--hov-color);
     background-color: transparent;
     font-weight: bold;
+}
+
+.body .btn-loading{
+    background-color: var(--hov-color);
+    color: white;
+}
+.btn-loading span{
+    color: white;
+}
+.body .btn-loading:hover{
+    background-color: var(--hov-color);
+    color: white;
+}
+.btn-loading:hover span{
+    color: white;
+}
+/* === modal popup === */
+.modal-popup {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    /* background: #e3f2fd; */
+  }
+
+  .modal-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.514);
+  }
+
+  .modal-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    width: 100%;
+    margin: auto;
+    padding: 30px 20px;
+    border-radius: 24px;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  .modal-popup.active .modal-box {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .modal-box i {
+    font-size: 70px;
+    color: var(--hov-color);
+  }
+  .modal-box h2 {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
+  }
+  .modal-box h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+  }
+  .modal-box .buttons {
+    margin-top: 25px;
+  }
+  .modal-box button {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin: 0 10px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    background: var(--hov-color);
+    border-radius: 5px;
+  }
+  .modal-box .close-btn{
+    cursor: pointer;
+  }
+
+  .modal-box .buttons .close-btn:hover {
+    opacity: 1.5;
+  }
+  body.dark .modal-box{
+    background-color: var(--nav-color);
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+}
+body.dark .modal-box h2,
+body.dark .modal-box h3{
+    color: white;
 }
 /* === Footer === */
 footer{
