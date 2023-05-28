@@ -1,311 +1,540 @@
 <!DOCTYPE html>
-<html lang="en" >
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Belajar Bareng | Artikel</title>
+<html lang="en" id="top">
 
-        <!-- === CSS === -->
-        <link rel="stylesheet" href="css/artikel.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Bareng | Artikel</title>
+    
+    <script src="https://kit.fontawesome.com/1b48e60650.js" crossorigin="anonymous"></script>
+    <!-- === CSS === -->
+    <link rel="stylesheet" href="css/artikel.css">
 
-        <!-- === Bootstrap CSS === -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- === Bootstrap CSS === -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-        <!-- === Bootstrap icon === -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!-- === Bootstrap icon === -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
-        <!-- === Share Script === -->
-        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6454b9407a3f120019cd13bc&product=inline-share-buttons&source=platform" async="async"></script>
-        <!-- <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63992d8ae6edea00197b17bd&product=inline-share-buttons' async='async'></script> -->
+    <!-- === Share Script === -->
+    <script type="text/javascript"
+        src="https://platform-api.sharethis.com/js/sharethis.js#property=6454b9407a3f120019cd13bc&product=inline-share-buttons&source=platform"
+        async="async"></script>
+    <!-- <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63992d8ae6edea00197b17bd&product=inline-share-buttons' async='async'></script> -->
 
-        <!-- === Boxicons CSS === -->
-        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <!-- === Boxicons CSS === -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
-        <!-- === CDN === -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- === CDN === -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <!-- === Favicon === -->
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    </head>
+    <!-- === Favicon === -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
 
-    <body>
-        <!-- Awal Navbar -->
-        <div class="navbar-luar shadow-sm">
-            <div class="nav-bar">
-                <i class='bx bx-menu sidebarOpen' ></i>
-                <span class="logo navLogo">
-                    <a class="navbar-brand" href="#">
-                        <img src="img/logo.png" alt="Logo" width="45" height="45" class="gambar d-inline-block align-text-center">
+<body>
+    <!-- Awal Navbar -->
+    <div class="navbar-luar shadow-sm">
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <span class="logo navLogo">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Logo" width="45" height="45"
+                        class="gambar d-inline-block align-text-center">
+                    Belajar Bareng
+                </a>
+            </span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <a class="navbar-brand logo-side" href="#">
+                        <img src="img/logo.png" alt="Logo" width="40" height="40"
+                            class="d-inline-block align-text-center">
                         Belajar Bareng
                     </a>
-                </span>
-                
-                <div class="menu">
-                    <div class="logo-toggle">
-                        <a class="navbar-brand logo-side" href="#">
-                                <img src="img/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-center">
-                                Belajar Bareng
-                        </a>
-                        <i class='bx bx-x siderbarClose'></i>
-                    </div>
-                    <li class="search-box">
-                        <i class='bx bx-search icon'></i>
-                        <input class="inp" type="text" placeholder="Search...">
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input class="inp" type="text" placeholder="Search...">
+                </li>
+
+                <ul class="nav-links">
+                    <li>
+                        <a class="aktv" href="#">Home</a>
                     </li>
-                    
-                    <ul class="nav-links">
-                        <li>
-                            <a class="aktv" href="#">Home</a>
-                        </li>
-                        <li>
-                            <a class="aktv mensub" href="#">Artikel</a>
-                        </li>
-                        
-                        <li>
-                            <a class="aktv" href="about.html">About</a>
-                        </li>
-                        <li class="mode">
-                            <div class="sun-moon">
-                                <i class='bx bx-moon icon moon'></i>
-                                <i class='bx bx-sun icon sun'></i>
-                            </div>
-                            <span class="mode-text text">Dark mode</span>
-                
-                            <div class="toggle-switch">
-                                <span class="switch"></span>
-                            </div>
-                        </li>                
-                    </ul>
+                    <li>
+                        <a class="aktv mensub" href="#">Artikel</a>
+                    </li>
+
+                    <li>
+                        <a class="aktv" href="about.html">About</a>
+                    </li>
+                    <li class="mode">
+                        <div class="sun-moon">
+                            <i class='bx bx-moon icon moon'></i>
+                            <i class='bx bx-sun icon sun'></i>
+                        </div>
+                        <span class="mode-text text">Dark mode</span>
+
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
                 </div>
 
-                <div class="darkLight-searchBox">
-                    <div class="dark-light">
-                        <i class='bx bx-moon moon'></i>
-                        <i class='bx bx-sun sun'></i>
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
                     </div>
-
-                    <div class="searchBox">
-                        <div class="searchToggle">
-                            <i class='bx bx-x cancel'></i>
-                            <i class='bx bx-search search'></i>
-                        </div>
-                        <div class="search-field">
-                            <input type="text" placeholder="Search...">
-                            <i class='bx bx-search'></i>
-                        </div>
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Akhir Navbar -->
+    </div>
+    <!-- Akhir Navbar -->
 
-        
 
-        <!-- Awal Main -->
-        <main>
-            <div class="box-main label-lokasi shadow-sm">
-                <a href="#">Artikel </a> >> <a href="#">Informatika </a> >> Kendaraan Yang Digunakan Saat Bepergian Keluar Kota
-            </div>
+    <!-- Awal Main -->
+    <main>
+        <div class="mode-melayang">
+            <i class='bx bx-moon moon'></i>
+            <i class='bx bx-sun sun'></i>
+        </div>
+        <a href="#top" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="box-main label-lokasi shadow-sm">
+            <a href="#">Artikel </a> >> <a href="#">Informatika </a> >> Kendaraan Yang Digunakan Saat Bepergian Keluar
+            Kota
+        </div>
 
-            <div class="box-main head">
-                <h1 class="mb-3">Kendaraan Yang Digunakan Saat Bepergian Keluar Kota</h1>
-                <p class="info mb-3">
-                    <small class="">
-                        <i class="bi bi-person"></i>
-                        Admin
-                    </small>
-                    <small class="ms-3">
-                        <i class="bi bi-clock"></i>
-                        1 Mei 2023
-                    </small>
-                    <small class="mx-3">
+        <div class="box-main head">
+            <h1 class="mb-3">Kendaraan Yang Digunakan Saat Bepergian Keluar Kota</h1>
+            <div class="row justify-content-start info">
+                <div class="penulis">
+                    <div class="foto">
+                        <img src="img/profilee.jpg" class="img-fluid" alt="penulis">
+                    </div>
+                    <div class="identitas">
+                        <span class="nama">Hasby Maulana</span>
+                        <span class="date">Diupdate pada 22 Mei 2023</span>
+                    </div>
+                </div>
+                <div class="advance-post">
+                    <small class="ikon">
                         <i class="bi bi-eye"></i>
-                        1.8K
+                        2.1 K
                     </small>
-                </p>
-
-                <div class="share-btn mb-3">
-                    <div class="sharethis-inline-share-buttons"></div>
+                    <a class="ikon like">
+                        <i class="bi bi-heart Likeoff"></i>
+                        <i class="bi bi-heart-fill d-none Likeon"></i>
+                        <span class="jumlahLike">985</span>
+                    </a>
+                    <a href="#ulasan" class="ikon ulasan">
+                        <i class="bi bi-chat-left-text"></i>
+                        924
+                    </a>
                 </div>
             </div>
 
-            <img src="img/header.jpg" class="kendaraan1 rounded mx-auto d-block mb-3" alt="kndaraan1">
+            <div class="share-btn mb-3">
+                <div class="sharethis-inline-share-buttons"></div>
+            </div>
+        </div>
 
-            
-            <!-- <div class="share-side">
-                <div class="sharethis-sticky-share-buttons"></div>
-            </div> -->
-            <div class="row isi justify-content-between">
-                <div class="col-2 daftar">
-                    <div class="content-list shadow-sm">
-                        <div class="header">
-                            <h4>Content</h4>
-                        </div>
-                        <nav id="daftar-isi" class="body flex-column align-items-stretch">
-                            <nav class="nav nav-pills" style="margin-left: 5px;"">
-                                <a class="nav-link" href="#judul-1">1. Kendaraan Umum</a>
-                                <nav class="nav nav-pills">
-                                    <a class="nav-link ms-3 my-1" href="#judul-1-1">1.1 Kelebihan</a>
-                                    <a class="nav-link ms-3 my-1" href="#judul-1-2">1.2 Kekurangan</a>
-                                </nav>
-                                <a class="nav-link" href="#judul-2">2. Kendaraan Pribadi</a>
-                                <nav class="nav nav-pills">
-                                    <a class="nav-link ms-3 my-1" href="#judul-2-1">2.1 Kelebihan</a>
-                                    <a class="nav-link ms-3 my-1" href="#judul-2-2">2.2 Kekurangan</a>
-                                </nav>
-                                <a class="nav-link" href="#judul-3">3. Kesimpulan</a>
-                                <a class="nav-link" style="margin-bottom: 10px;" href="#judul-4">4. Penutup</a>
+        <img src="img/header.jpg" class="kendaraan1 rounded mx-auto d-block mb-3" alt="kndaraan1">
+
+        <div class="row isi justify-content-between">
+            <div class="col-2 daftar">
+                <div class="content-list shadow-sm">
+                    <div class="header">
+                        <h4>Content</h4>
+                    </div>
+                    <nav id="daftar-isi" class="body flex-column align-items-stretch">
+                        <nav class="nav nav-pills" style="margin-left: 5px;">
+                                <a class=" nav-link" href="#judul-1">1. Kendaraan Umum</a>
+                            <nav class="nav nav-pills">
+                                <a class="nav-link ms-3 my-1" href="#judul-1-1">1.1 Kelebihan</a>
+                                <a class="nav-link ms-3 my-1" href="#judul-1-2">1.2 Kekurangan</a>
                             </nav>
+                            <a class="nav-link" href="#judul-2">2. Kendaraan Pribadi</a>
+                            <nav class="nav nav-pills">
+                                <a class="nav-link ms-3 my-1" href="#judul-2-1">2.1 Kelebihan</a>
+                                <a class="nav-link ms-3 my-1" href="#judul-2-2">2.2 Kekurangan</a>
+                            </nav>
+                            <a class="nav-link" href="#judul-3">3. Kesimpulan</a>
+                            <a class="nav-link" style="margin-bottom: 10px;" href="#judul-4">4. Penutup</a>
                         </nav>
-                    </div>
+                    </nav>
                 </div>
-                
-                <div class="col-9 artikel shadow-sm" data-bs-spy="scroll" data-bs-target="#daftar-isi" tabindex="0">
-                    <div class="bingkai">
-                        <p class="inden">Sebagian besar masyarakat yang mengadu nasib di daerah perkotaan mungkin sudah tidak asing lagi dengan kepadatan lalu lintas yang terjadi saat melakukan perjalanan. Berbagai titik kemacetan pun hampir selalu tercipta setiap harinya di sejumlah jalan protokol. 
-                        <p class="inden">Kamu yang memiliki mobilitas tinggi, baik itu kuliah atau bekerja, mungkin terpaksa harus berangkat lebih pagi agar tidak terlambat sampai ke tujuan, terutama untuk kamu yang tinggal dengan jarak yang jauh. Berbicara tentang transportasi umum vs pribadi, kira-kira manakah yang paling tepat untuk mendukung segala mobilitas harianmu?</p>
-                        <p class="inden">Ingatlah bahwa setiap pilihan kendaraan yang kamu gunakan memiliki kelebihan dan kekurangannya masing-masing. Misalnya, menggunakan transportasi umum bisa menjadi jalan pintas untuk kamu yang ingin lebih santai dalam berkendara, sayangnya jam operasional mereka memang cukup terbatas. Sementara itu, penggunaan kendaraan pribadi menawarkan fleksibilitas tanpa batas dan hemat ongkos, namun kamu tidak bisa menghindari kemacetan. Lebih jelasnya, simak pembahasan berikut ini, yuk!</p>
-                        <div class="konten" id="judul-1">
-                            <h4 class="bab">1. Kendaraan Umum</h4>
+            </div>
 
-                            <img src="img/Umum/umum-1.jpg" class="img-artikel" alt="kendaraan-umum">
-                            <p class="inden">Angkutan umum merupakan sarana angkutan untuk masyarakat secara umum supaya dapat melaksanakan kegiatannya sesuai dengan tugas dan fungsinya dalam masyarakat. Pengguna angkutan umum ini bervariasi, mulai dari buruh, ibu rumah tangga, mahasiswa, pelajar, dan lain-lain. Kendaraan umum dibedakan menjadi 3 jenis yakni kendaraan darat,udara dan air</p>
+            <div class="col-9 artikel shadow-sm" data-bs-spy="scroll" data-bs-target="#daftar-isi" tabindex="0">
+                <div class="bingkai">
+                    <p class="inden">Sebagian besar masyarakat yang mengadu nasib di daerah perkotaan mungkin sudah
+                        tidak asing lagi dengan kepadatan lalu lintas yang terjadi saat melakukan perjalanan. Berbagai
+                        titik kemacetan pun hampir selalu tercipta setiap harinya di sejumlah jalan protokol.
+                    <p class="inden">Kamu yang memiliki mobilitas tinggi, baik itu kuliah atau bekerja, mungkin terpaksa
+                        harus berangkat lebih pagi agar tidak terlambat sampai ke tujuan, terutama untuk kamu yang
+                        tinggal dengan jarak yang jauh. Berbicara tentang transportasi umum vs pribadi, kira-kira
+                        manakah yang paling tepat untuk mendukung segala mobilitas harianmu?</p>
+                    <p class="inden">Ingatlah bahwa setiap pilihan kendaraan yang kamu gunakan memiliki kelebihan dan
+                        kekurangannya masing-masing. Misalnya, menggunakan transportasi umum bisa menjadi jalan pintas
+                        untuk kamu yang ingin lebih santai dalam berkendara, sayangnya jam operasional mereka memang
+                        cukup terbatas. Sementara itu, penggunaan kendaraan pribadi menawarkan fleksibilitas tanpa batas
+                        dan hemat ongkos, namun kamu tidak bisa menghindari kemacetan. Oleh karena itu saya sudah melakukan survei tentang hal ini. Lebih jelasnya, simak pembahasan
+                        berikut ini, yuk!</p>
+                    <div class="tabelContent">
+                        <div class="header">
+                            <i class="bi bi-list hideList"></i>
+                            <p>Daftar Isi</p>
                         </div>
-                        <div id="judul-1-1">
-                            <h4 class="bab">Kelebihan</h4>
-
-                                <p class="sub-bab"><b>1.    Menghemat Pengeluaran</b></p>
-
-                                <img src="img/Umum/umum-2.jpg" class="img-artikel" alt="hemat pengeluaran">
-                                <p class="inden">Tarif angkutan umum lebih murah jika dibandingkan dengan kendaraan pribadi. Dengan biaya Rp. 3.500/ perjalanan, Anda dapat bebas melakukan perjalanan dan transit kemana saja dengan nyaman dan aman tanpa panas-panasan.
-                                Kini, angkutan umum juga menyediakan layanan cashless menggunakan kartu e-money atau e-wallet, sehingga penumpang tidak perlu repot-repot membawa uang tunai. 
-                                Tentunya, akan menekan biaya pengeluaran pemeliharaan kendaraan dan bisa dialihkan ke kebutuhan lainnya.</p>
-
-                                <p class="sub-bab"><b>2.   Keamanan dan kenyamanan Terjamin</b></p>
-
-                                <img src="img/Umum/umum-3.jpg" class="img-artikel" alt="">
-                                <p class="inden">Modal transportasi seperti Trans Jogja atau Teman Bus mengunggulkan keamanan dan kenyamanan. Ada kursi empuk yang nyaman untuk diduduki, AC yang dingin, bus yang luas, ramah disabilitas, dan CCTV untuk mencegah dari tindakan kejahatan. 
-                                Secara tidak langsung menggunakan angkutan umum dapat menurunkan jumlah kecelakaan di jalan. Pastinya tingkat kecelakaan yang rendah juga mengurangi kerugian sebuah kota.</p>
-
-                                <p class="sub-bab"><b>3.   Tidak perlu mencari parkir</b></p>
-
-                                <img src="img/Umum/umum-4.jpeg" class="img-artikel" alt="parkir">
-                                <p class="inden">Mencari tempat parkir yang kosong membutuhkan waktu, sehingga jika menaiki transportasi umum dapat menghemat waktu. Belum jika semua tempat parkir penuh, maka harus mencari-cari terlebih dahulu yang membuat pusing. Inilah kelebihan angkutan umum.
-                                Jika mempunyai kendaraan pribadi, Anda juga harus siap mempunyai lahan parkir yang tidak mengganggu masyarakat dan mengambil jalan umum. Tambah pusing, kan?</p>
-
-                                <p class="sub-bab"><b>4.   Hemat Tenaga</b></p>
-
-                                <img src="img/Umum/umum-5.jpg" class="img-artikel" alt="hemat tenaga">
-                                <p class="inden">Cukup dengan duduk santai dan beristirahat sejenak, Anda sudah mencapai tempat tujuan Anda. Tanpa repot-repot menyetir yang memperlakukan fokus yang tentu lebih menguras tenaga dibandingkan hanya duduk saja di angkutan umum yang dikendarai supir atau masinis.
-                                Apalagi jika harus berhadapan dengan kemacetan yang dapat menimbulkan stress akan semakin melelahkan.
-                                </p>
-                        </div>
-                        <div id="judul-1-2">
-                            <h4 class="bab">Kekurangan</h4>
-
-                                <p class="sub-bab"><b>1.	Waktu Operasional yang terbatas</b></p>
-
-                                <img src="img/Umum/umum-6.jpeg" class="img-artikel" alt="waktu terbatas">
-                                <p class="inden">Sering kali, orang-orang merasa kesulitan ketika harus melakukan perjalanan saat larut malam, mengingat sebagian besar transportasi umum biasanya menerapkan jam operasional tertentu. Opsi transportasi berbasis online pun terpaksa harus diambil meski terbilang cukup mahal. Ini menjadi sesuatu yang kurang menguntungkan. Lain halnya jika kamu membawa kendaraan pribadi.</p>
-
-                                <p class="sub-bab"><b>2.	Berdesakan dengan penumpang lain</b></p>
-
-                                <img src="img/Umum/umum-7.jpg" class="img-artikel" alt="berdesakan">
-                                <p class="inden">Ketika menggunakan transportasi umum artinya Anda sudah siap berdesakan dengan banyak penumpang lain yang tidak dikenal. Terlebih pada jam-jam berangkat dan pulang kerja. Sudah menjadi hal lumrah jika melihat transportasi publik seperti bus dan kereta dipenuhi dengan banyak orang yang hendak berangkat kerja. Hal itu umumnya dapat dilihat di kota-kota sibuk di dunia. Bahkan secanggih apa pun transportasi publiknya, nyatanya belum mampu mengubah citra dalam menggunakan transportasi publik. Ini juga sekaligus menjadi alasan utama mengapa banyak orang masih memilih menggunakan transportasi pribadi dibandingkan transportasi umum.</p>
-
-                                <p class="sub-bab"><b>3.	Rawan kemacetan</b></p>
-
-                                <img src="img/Umum/kemacetan.jpg" class="img-artikel" alt="macet">
-                                <p class="inden">Ketika menggunakan transportasi umum, kita masih rentan terkena kemacetan, terutama jika kita tinggal di kota besar yang padat penduduknya. 
-                                Meskipun transportasi umum memiliki jalur khusus di beberapa kota, tetap saja waktu perjalanan bisa lebih lama dari yang diharapkan.</p>
-
-                                <p class="sub-bab"><b>4.	Terikat oleh jadwal</b></p>
-
-                                <img src="img/Umum/umum-9.jpeg" class="img-artikel" alt="hemat tenaga">
-                                <p class="inden">Salah satu kelemahan utama dari menggunakan transportasi umum adalah kita terikat pada jadwal keberangkatan dan kedatangan yang telah ditentukan. 
-                                Ini berarti kita harus mengatur jadwal kita dengan baik untuk memastikan kita tiba tepat waktu di kantor.
-                                </p>
-                        </div>
-                        <div class="konten" id="judul-2">
-                            <h4 class="bab">2. Kendaraan Pribadi</h4>
-
-                            <p class="inden">Angkutan pribadi adalah angkutan yang menggunakan kendaraan pribadi, seperti mobil pribadi, sepeda motor, sepeda, tetapi bisa juga menggunakan bus yang biasanya digunakan untuk keperluan pribadi. Angkutan pribadi merupakan lawan kata angkutan umum. Transportasi dengan menggunakan kendaraan pribadi biasanya lebih mahal dari transportasi menggunakan angkutan umum karena alasan efisiensi angkutan umum yang lebih baik.</p>
-                            <img src="img/Pribadi/pribadi-1.jpg" class="img-artikel" alt="hemat pengeluaran">
-                        </div>
-                        <div id="judul-2-1">
-                            <h4 class="bab">Kelebihan</h4>
-
-                                <p class="sub-bab"><b>1.	Flexsibel</b></p>
-                                
-                                <img src="img/Pribadi/pribadi-2.jpg" class="img-artikel" alt="hemat pengeluaran">
-                                <p class="inden">Salah satu kelebihan transportasi pribadi adalah sifatnya yang fleksibel dan bisa dibawa berkendara kapan saja. Jika ingin pulang larut malam, kamu pun tidak harus dikejar-kejar waktu lagi seperti layaknya hendak menaiki transportasi umum. Keberadaan transportasi pribadi juga akan sangat berguna saat kondisi darurat. Misalnya, kamu bisa langsung mengeluarkan kendaraan dari garasi bila ada anggota keluarga yang harus segera dirujuk ke rumah sakit terdekat.</p>
-
-                                <p class="sub-bab"><b>2.	Lebih hemat ongkos</></b></p>
-
-                                <img src="img/Pribadi/pribadi-3.jpg" class="img-artikel" alt="hemat pengeluaran">
-                                <p class="inden">Sudah menjadi rahasia umum kalau menggunakan kendaraan pribadi akan membantumu lebih bisa menghemat anggaran transportasi, terutama bagi kamu yang harus menempuh jarak jauh untuk bisa sampai ke kantor. Karena bila harus menaiki kendaraan umum, mungkin kamu perlu melakukan pergantian kendaraan hingga beberapa kali terlebih dahulu untuk bisa tiba di lokasi, sehingga kamu perlu mengeluarkan ongkos yang jauh lebih tinggi.</p>
-
-                                <p class="sub-bab"><b>3.	Nyaman dan  Privasi</b></p>
-
-                                <img src="img/Pribadi/pribadi-4.png" class="img-artikel" alt="hemat pengeluaran">
-                                <p class="inden">Naik kendaraan pribadi memberikan privasi dan kenyamanan yang tidak dapat ditemukan dalam transportasi umum. 
-                                Kamu bisa menikmati perjalanan tanpa harus berdesak-desakan dengan orang lain.</p>
-
-                                <p class="sub-bab"><b>4.	Lebih leluasa/bebas</b></p>
-
-                                <img src="img/Pribadi/pribadi-5.jpg" class="img-artikel" alt="hemat pengeluaran">
-                                <p class="inden">Salah satu kelebihan kendaraan pribadi yakni kita bisa leluasa dan bebas jika kita ingin berhenti dimanapun dan kapanpun Khusus untuk perjalanan jarak jauh memang tidaklah mudah, apalagi dengan durasi perjalanan yang tak sebentar. Kadang kala, kamu akan merasa lelah atau pun keinginan untuk buang air.
-                                Jika menggunakan kendaraan pribadi, kamu bebas untuk berhenti di rest area. Kamu jadi dapat menggunakan kesempatan tersebut untuk beristirahat, makan, atau pun buang air. Tentunya perjalanan pun menjadi lebih menyenangkan dengan hal tersebut.
-                                </p>
-                        </div>
-                        <div id="judul-2-2">
-                            <h4 class="bab">Kekurangan</h4>
-
-                                <p class="sub-bab"><b>1.	Menambah Polusi</b></p>
-
-                                <img src="img/Pribadi/pribadi-6.jpg" class="img-artikel" alt="hemat pengeluaran">
-                                <p class="inden">Tidak bisa dipungkiri bahwa kendaraan pribadi memang menjadi salah satu kontributor polusi udara terbesar di wilayah perkotaan. Apalagi bahan bakar minyak juga diketahui kurang ramah lingkungan. Sementara itu, masyarakat yang memilih untuk menggunakan kendaraan pribadi terus meningkat pesat. Maka tak heran, bila pencemaran udara semakin merajalela.</p>
-
-                                <p class="sub-bab"><b>2.	Kemacetan</b></p>
-
-                                <img src="img/Pribadi/pribadi-macet.jpg" class="img-artikel" alt="hemat pengeluaran">
-                                <p class="inden">Naik kendaraan pribadi tidak menjamin kamu terhindar dari kemacetan. 
-                                Kadang-kadang, bahkan dapat lebih sulit untuk mencari tempat parkir di kantor, terutama jika kantor kamu terletak di pusat kota yang padat.</p>
-
-                                <p class="sub-bab"><b>3.	Lebih capek Ketika di  perjalanan</b></p>
-
-                                <img src="img/Pribadi/pribadi-7.jpg" class="img-artikel" alt="hemat pengeluaran">
-                                <p class="inden">Jika kita menggunakan kendaraan pribadi kita akan merasakan kelelahan saat di perjalanan, berbeda dengan kendaraan umum kitab isa duduk santai sambal melihat pemandangan</p>
-
-                                <p class="sub-bab"><b>4.	Harus siapkan biaya urgent</b></p>
-
-                                <img src="img/Pribadi/pribadi-8.jpeg" class="img-artikel" alt="hemat pengeluaran">
-                                <p class="inden">Jika saat kita diperjalanan terjadi hal yang  tak  terduga seperti ban bocor ,bbm habis dan lain-lain maka kita harus menanggung semua itu dengan sendiri,jadi kita harus menyiapkan dana untuk kebutuhan urgent Ketika di perjalanan.
-                                </p>
-                        </div>
-                        <div class="konten" id="judul-3">
-                            <h4 class="bab">3. Kesimpulan</h4>
-                            <p>Berdasarkan survey yang telah saya lakukan, saya mendapatkan hasil survey sebanyak 75 jawaban dengan rincian sebanyak 68 orang memilih kendaraan pribadi dan sebanyak 7 orang memilik kendaraan umum, untuk lebih jelasnya simak hasil survey dibawah ini.</p>
-                        </div>
-                        <div class="konten" id="judul-4">
-                            <h4 class="bab">4. Penutup</h4>
-                            
-                            <p class="inden">Nah, itu dia kelebihan dan kekurangan dari transportasi umum vs pribadi. Apa pun jenis kendaraan yang kamu pilih, baik itu transportasi umum atau pribadi, pastikan untuk mempertimbangkan faktor-faktor di atas tadi. Meski demikian, cost pengeluaran selalu menjadi aspek yang paling penting untuk diperhitungkan, mengingat hasilnya dapat berbeda-beda di setiap orang. Tapi jangan sampai lupa untuk mempertimbangkan kenyamanan, serta mana pilihan kendaraan yang bisa lebih cepat membawamu sampai ke tempat tujuan.
-                            </p>
-
-                            <p class="inden">Misalnya, jika menggunakan transportasi umum terbukti bisa menekan biaya ongkos perbulannya, maka pilihan yang satu ini mungkin bisa menjadi alternatif yang menjanjikan, namun bila ternyata jauh lebih mahal, maka kamu bisa memilih untuk membawa kendaraan pribadi. Jangan lupa juga untuk mempertimbangkan aspek kenyamanan, serta mana pilihan kendaraan yang bisa lebih cepat membawamu sampai ke tempat tujuan. Selamat beraktivitas!</p>
-                            
-                            <p class="inden">Kesimpulannya adalah transportasi umum tetap lebih baik digunakan bagi masyarakat yang tinggal di daerah perkotaan. Karena dengan menggunakan transportasi umum, masyarakat ikut serta dalam upaya mengurangi kemacetan dan mengurangi polusi udara yang semakin parah. Tetapi, karena adanya daerah yang belum menyediakan transportasi umum secara maksimal dan memadai. Maka berakibat pada pilihan masyarakat untuk tetap menggunakan kendaraan pribadi masih tinggi. Dan tentunya, pemerintah juga harus melakukan sosialisasi kepada masyarakat, agar kesadaran akan penggunaan transportasi umum bisa lebih meningkat. Namun, pada akhirnya itu semua kembali kepada kebutuhan masing-masing individu.</p>
+                        <div class="body">
+                            <ol>
+                                <li><a href="#judul-1">Kendaraan Umum</a></li>
+                                <ul>
+                                    <li class="sub-tabel"><a href="#judul-1-1">Kelebihan</a></li>
+                                    <li class="sub-tabel"><a href="#judul-1-2">Kekurangan</a></li>
+                                </ul>
+                                <li><a href="#judul-2">Kendaraan Pribadi</a></li>
+                                <ul>
+                                    <li class="sub-tabel"><a href="#judul-2-1">Kelebihan</a></li>
+                                    <li class="sub-tabel"><a href="#judul-2-2">Kekurangan</a></li>
+                                </ul>
+                                <li><a href="#judul-3">Kesimpulan</a></li>
+                                <li><a href="#judul-4">Penutup</a></li>
+                            </ol>
                         </div>
                     </div>
-                </div>
+                    <div class="konten" id="judul-1">
+                        <h4 class="bab">1. Kendaraan Umum</h4>
 
-            <!-- <div class="sharethis-inline-share-buttons mb-3 mt-3 share"></div> -->
+                        <img src="img/Umum/umum-1.jpg" class="img-artikel" alt="kendaraan-umum">
+                        <p class="inden">Angkutan umum merupakan sarana angkutan untuk masyarakat secara umum supaya
+                            dapat melaksanakan kegiatannya sesuai dengan tugas dan fungsinya dalam masyarakat. Pengguna
+                            angkutan umum ini bervariasi, mulai dari buruh, ibu rumah tangga, mahasiswa, pelajar, dan
+                            lain-lain. Kendaraan umum dibedakan menjadi 3 jenis yakni kendaraan darat,udara dan air</p>
+                    </div>
+                    <div id="judul-1-1">
+                        <h4 class="bab">Kelebihan</h4>
+
+                        <p class="sub-bab"><b>1. Menghemat Pengeluaran</b></p>
+
+                        <img src="img/Umum/umum-2.jpg" class="img-artikel" alt="hemat pengeluaran">
+                        <p class="inden">Tarif angkutan umum lebih murah jika dibandingkan dengan kendaraan pribadi.
+                            Dengan biaya Rp. 3.500/ perjalanan, Anda dapat bebas melakukan perjalanan dan transit kemana
+                            saja dengan nyaman dan aman tanpa panas-panasan.
+                            Kini, angkutan umum juga menyediakan layanan cashless menggunakan kartu e-money atau
+                            e-wallet, sehingga penumpang tidak perlu repot-repot membawa uang tunai.
+                            Tentunya, akan menekan biaya pengeluaran pemeliharaan kendaraan dan bisa dialihkan ke
+                            kebutuhan lainnya.</p>
+
+                        <p class="sub-bab"><b>2. Keamanan dan kenyamanan Terjamin</b></p>
+
+                        <img src="img/Umum/umum-3.jpg" class="img-artikel" alt="">
+                        <p class="inden">Modal transportasi seperti Trans Jogja atau Teman Bus mengunggulkan keamanan
+                            dan kenyamanan. Ada kursi empuk yang nyaman untuk diduduki, AC yang dingin, bus yang luas,
+                            ramah disabilitas, dan CCTV untuk mencegah dari tindakan kejahatan.
+                            Secara tidak langsung menggunakan angkutan umum dapat menurunkan jumlah kecelakaan di jalan.
+                            Pastinya tingkat kecelakaan yang rendah juga mengurangi kerugian sebuah kota.</p>
+
+                        <p class="sub-bab"><b>3. Tidak perlu mencari parkir</b></p>
+
+                        <img src="img/Umum/umum-4.jpeg" class="img-artikel" alt="parkir">
+                        <p class="inden">Mencari tempat parkir yang kosong membutuhkan waktu, sehingga jika menaiki
+                            transportasi umum dapat menghemat waktu. Belum jika semua tempat parkir penuh, maka harus
+                            mencari-cari terlebih dahulu yang membuat pusing. Inilah kelebihan angkutan umum.
+                            Jika mempunyai kendaraan pribadi, Anda juga harus siap mempunyai lahan parkir yang tidak
+                            mengganggu masyarakat dan mengambil jalan umum. Tambah pusing, kan?</p>
+
+                        <p class="sub-bab"><b>4. Hemat Tenaga</b></p>
+
+                        <img src="img/Umum/umum-5.jpg" class="img-artikel" alt="hemat tenaga">
+                        <p class="inden">Cukup dengan duduk santai dan beristirahat sejenak, Anda sudah mencapai tempat
+                            tujuan Anda. Tanpa repot-repot menyetir yang memperlakukan fokus yang tentu lebih menguras
+                            tenaga dibandingkan hanya duduk saja di angkutan umum yang dikendarai supir atau masinis.
+                            Apalagi jika harus berhadapan dengan kemacetan yang dapat menimbulkan stress akan semakin
+                            melelahkan.
+                        </p>
+                    </div>
+                    <div id="judul-1-2">
+                        <h4 class="bab">Kekurangan</h4>
+
+                        <p class="sub-bab"><b>1. Waktu Operasional yang terbatas</b></p>
+
+                        <img src="img/Umum/umum-6.jpeg" class="img-artikel" alt="waktu terbatas">
+                        <p class="inden">Sering kali, orang-orang merasa kesulitan ketika harus melakukan perjalanan
+                            saat larut malam, mengingat sebagian besar transportasi umum biasanya menerapkan jam
+                            operasional tertentu. Opsi transportasi berbasis online pun terpaksa harus diambil meski
+                            terbilang cukup mahal. Ini menjadi sesuatu yang kurang menguntungkan. Lain halnya jika kamu
+                            membawa kendaraan pribadi.</p>
+
+                        <p class="sub-bab"><b>2. Berdesakan dengan penumpang lain</b></p>
+
+                        <img src="img/Umum/umum-7.jpg" class="img-artikel" alt="berdesakan">
+                        <p class="inden">Ketika menggunakan transportasi umum artinya Anda sudah siap berdesakan dengan
+                            banyak penumpang lain yang tidak dikenal. Terlebih pada jam-jam berangkat dan pulang kerja.
+                            Sudah menjadi hal lumrah jika melihat transportasi publik seperti bus dan kereta dipenuhi
+                            dengan banyak orang yang hendak berangkat kerja. Hal itu umumnya dapat dilihat di kota-kota
+                            sibuk di dunia. Bahkan secanggih apa pun transportasi publiknya, nyatanya belum mampu
+                            mengubah citra dalam menggunakan transportasi publik. Ini juga sekaligus menjadi alasan
+                            utama mengapa banyak orang masih memilih menggunakan transportasi pribadi dibandingkan
+                            transportasi umum.</p>
+
+                        <p class="sub-bab"><b>3. Rawan kemacetan</b></p>
+
+                        <img src="img/Umum/kemacetan.jpg" class="img-artikel" alt="macet">
+                        <p class="inden">Ketika menggunakan transportasi umum, kita masih rentan terkena kemacetan,
+                            terutama jika kita tinggal di kota besar yang padat penduduknya.
+                            Meskipun transportasi umum memiliki jalur khusus di beberapa kota, tetap saja waktu
+                            perjalanan bisa lebih lama dari yang diharapkan.</p>
+
+                        <p class="sub-bab"><b>4. Terikat oleh jadwal</b></p>
+
+                        <img src="img/Umum/umum-9.jpg" class="img-artikel" alt="hemat tenaga">
+                        <p class="inden">Salah satu kelemahan utama dari menggunakan transportasi umum adalah kita
+                            terikat pada jadwal keberangkatan dan kedatangan yang telah ditentukan.
+                            Ini berarti kita harus mengatur jadwal kita dengan baik untuk memastikan kita tiba tepat
+                            waktu di kantor.
+                        </p>
+                    </div>
+                    <div class="konten" id="judul-2">
+                        <h4 class="bab">2. Kendaraan Pribadi</h4>
+
+                        <img src="img/Pribadi/pribadi-1.jpg" class="img-artikel" alt="hemat pengeluaran">
+                        <p class="inden">Angkutan pribadi adalah angkutan yang menggunakan kendaraan pribadi, seperti
+                            mobil pribadi, sepeda motor, sepeda, tetapi bisa juga menggunakan bus yang biasanya
+                            digunakan untuk keperluan pribadi. Angkutan pribadi merupakan lawan kata angkutan umum.
+                            Transportasi dengan menggunakan kendaraan pribadi biasanya lebih mahal dari transportasi
+                            menggunakan angkutan umum karena alasan efisiensi angkutan umum yang lebih baik.</p>
+                    </div>
+                    <div id="judul-2-1">
+                        <h4 class="bab">Kelebihan</h4>
+
+                        <p class="sub-bab"><b>1. Flexsibel</b></p>
+
+                        <img src="img/Pribadi/pribadi-2.jpg" class="img-artikel" alt="hemat pengeluaran">
+                        <p class="inden">Salah satu kelebihan transportasi pribadi adalah sifatnya yang fleksibel dan
+                            bisa dibawa berkendara kapan saja. Jika ingin pulang larut malam, kamu pun tidak harus
+                            dikejar-kejar waktu lagi seperti layaknya hendak menaiki transportasi umum. Keberadaan
+                            transportasi pribadi juga akan sangat berguna saat kondisi darurat. Misalnya, kamu bisa
+                            langsung mengeluarkan kendaraan dari garasi bila ada anggota keluarga yang harus segera
+                            dirujuk ke rumah sakit terdekat.</p>
+
+                        <p class="sub-bab"><b>2. Lebih hemat ongkos</></b></p>
+
+                        <img src="img/Pribadi/pribadi-3.jpg" class="img-artikel" alt="hemat pengeluaran">
+                        <p class="inden">Sudah menjadi rahasia umum kalau menggunakan kendaraan pribadi akan membantumu
+                            lebih bisa menghemat anggaran transportasi, terutama bagi kamu yang harus menempuh jarak
+                            jauh untuk bisa sampai ke kantor. Karena bila harus menaiki kendaraan umum, mungkin kamu
+                            perlu melakukan pergantian kendaraan hingga beberapa kali terlebih dahulu untuk bisa tiba di
+                            lokasi, sehingga kamu perlu mengeluarkan ongkos yang jauh lebih tinggi.</p>
+
+                        <p class="sub-bab"><b>3. Nyaman dan Privasi</b></p>
+
+                        <img src="img/Pribadi/pribadi-4.png" class="img-artikel" alt="hemat pengeluaran">
+                        <p class="inden">Naik kendaraan pribadi memberikan privasi dan kenyamanan yang tidak dapat
+                            ditemukan dalam transportasi umum.
+                            Kamu bisa menikmati perjalanan tanpa harus berdesak-desakan dengan orang lain.</p>
+
+                        <p class="sub-bab"><b>4. Lebih leluasa/bebas</b></p>
+
+                        <img src="img/Pribadi/pribadi-5.jpg" class="img-artikel" alt="hemat pengeluaran">
+                        <p class="inden">Salah satu kelebihan kendaraan pribadi yakni kita bisa leluasa dan bebas jika
+                            kita ingin berhenti dimanapun dan kapanpun Khusus untuk perjalanan jarak jauh memang
+                            tidaklah mudah, apalagi dengan durasi perjalanan yang tak sebentar. Kadang kala, kamu akan
+                            merasa lelah atau pun keinginan untuk buang air.
+                            Jika menggunakan kendaraan pribadi, kamu bebas untuk berhenti di rest area. Kamu jadi dapat
+                            menggunakan kesempatan tersebut untuk beristirahat, makan, atau pun buang air. Tentunya
+                            perjalanan pun menjadi lebih menyenangkan dengan hal tersebut.
+                        </p>
+                    </div>
+                    <div id="judul-2-2">
+                        <h4 class="bab">Kekurangan</h4>
+
+                        <p class="sub-bab"><b>1. Menambah Polusi</b></p>
+
+                        <img src="img/Pribadi/pribadi-6.jpg" class="img-artikel" alt="hemat pengeluaran">
+                        <p class="inden">Tidak bisa dipungkiri bahwa kendaraan pribadi memang menjadi salah satu
+                            kontributor polusi udara terbesar di wilayah perkotaan. Apalagi bahan bakar minyak juga
+                            diketahui kurang ramah lingkungan. Sementara itu, masyarakat yang memilih untuk menggunakan
+                            kendaraan pribadi terus meningkat pesat. Maka tak heran, bila pencemaran udara semakin
+                            merajalela.</p>
+
+                        <p class="sub-bab"><b>2. Kemacetan</b></p>
+
+                        <img src="img/Pribadi/pribadi-macet.jpg" class="img-artikel" alt="hemat pengeluaran">
+                        <p class="inden">Naik kendaraan pribadi tidak menjamin kamu terhindar dari kemacetan.
+                            Kadang-kadang, bahkan dapat lebih sulit untuk mencari tempat parkir di kantor, terutama jika
+                            kantor kamu terletak di pusat kota yang padat.</p>
+
+                        <p class="sub-bab"><b>3. Lebih capek Ketika di perjalanan</b></p>
+
+                        <img src="img/Pribadi/pribadi-7.jpg" class="img-artikel" alt="hemat pengeluaran">
+                        <p class="inden">Jika kita menggunakan kendaraan pribadi kita akan merasakan kelelahan saat di
+                            perjalanan, berbeda dengan kendaraan umum kitab isa duduk santai sambal melihat pemandangan
+                        </p>
+
+                        <p class="sub-bab"><b>4. Harus siapkan biaya urgent</b></p>
+
+                        <img src="img/Pribadi/pribadi-8.jpeg" class="img-artikel" alt="hemat pengeluaran">
+                        <p class="inden">Jika saat kita diperjalanan terjadi hal yang tak terduga seperti ban bocor ,bbm
+                            habis dan lain-lain maka kita harus menanggung semua itu dengan sendiri,jadi kita harus
+                            menyiapkan dana untuk kebutuhan urgent Ketika di perjalanan.
+                        </p>
+                    </div>
+                    <div class="konten" id="judul-3">
+                        <h4 class="bab">3. Kesimpulan</h4>
+                        <p>Berdasarkan survey yang telah saya lakukan, saya mendapatkan hasil survey sebanyak <span>80 Responden</span>
+                            dengan rincian sebanyak <span>73 Orang</span> memilih kendaraan pribadi dan sebanyak <span>7 Orang</span> memilih
+                            kendaraan umum, untuk lebih jelasnya simak hasil survey dibawah ini.</p>
+                        <div class="asset-survei">
+                            <p>Jenis Kendaraan</p>
+                            <div class="tabel">
+                                <table class="table table-hover table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Jenis Kendaraan</th>
+                                            <th scope="col">Jumlah Responden</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Kendaraan Umum</td>
+                                            <td>7 Orang</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kendaraan Pribadi</td>
+                                            <td>73 Orang</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="chart">
+                                <center>
+                                    <canvas id="PieChart"></canvas>
+                                </center>
+                            </div>
+                        </div>
+                        <p>Dari 80 responden hanya 7 responden yang memilih kendaraan umum dengan rincian 5 responden </p>
+                        <div class="asset-survei">
+                            <p>Kendaraan Umum</p>
+                            <div class="tabel">
+                                <table class="table tabel-2 table-hover table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Nama Kendaraan</th>
+                                            <th scope="col">Jumlah Responden</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Bus</td>
+                                            <td>5 Orang</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kereta Api</td>
+                                            <td>1 Orang</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pesawat</td>
+                                            <td>1 Orang</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="chart">
+                                <center>
+                                    <canvas id="PieChart-umum"></canvas>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="asset-survei">
+                            <p>Kendaraan Pribadi</p>
+                            <div class="tabel">
+                                <table class="table tabel-3 table-hover table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Nama Kendaraan</th>
+                                            <th scope="col">Jumlah Responden</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Mobil</td>
+                                            <td>48 Orang</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Motor</td>
+                                            <td>13 Orang</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sepeda</td>
+                                            <td>7 Orang</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="chart">
+                                <center>
+                                    <canvas id="PieChart-pribadi"></canvas>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="konten" id="judul-4">
+                        <h4 class="bab">4. Penutup</h4>
+
+                        <p class="inden">Nah, itu dia kelebihan dan kekurangan dari transportasi umum vs pribadi. Apa
+                            pun jenis kendaraan yang kamu pilih, baik itu transportasi umum atau pribadi, pastikan untuk
+                            mempertimbangkan faktor-faktor di atas tadi. Meski demikian, cost pengeluaran selalu menjadi
+                            aspek yang paling penting untuk diperhitungkan, mengingat hasilnya dapat berbeda-beda di
+                            setiap orang. Tapi jangan sampai lupa untuk mempertimbangkan kenyamanan, serta mana pilihan
+                            kendaraan yang bisa lebih cepat membawamu sampai ke tempat tujuan.
+                        </p>
+
+                        <p class="inden">Misalnya, jika menggunakan transportasi umum terbukti bisa menekan biaya ongkos
+                            perbulannya, maka pilihan yang satu ini mungkin bisa menjadi alternatif yang menjanjikan,
+                            namun bila ternyata jauh lebih mahal, maka kamu bisa memilih untuk membawa kendaraan
+                            pribadi. Jangan lupa juga untuk mempertimbangkan aspek kenyamanan, serta mana pilihan
+                            kendaraan yang bisa lebih cepat membawamu sampai ke tempat tujuan.</p>
+
+                        <p class="inden">Intinya adalah transportasi umum tetap lebih baik digunakan bagi
+                            masyarakat yang tinggal di daerah perkotaan. Karena dengan menggunakan transportasi umum,
+                            masyarakat ikut serta dalam upaya mengurangi kemacetan dan mengurangi polusi udara yang
+                            semakin parah. Tetapi, karena adanya daerah yang belum menyediakan transportasi umum secara
+                            maksimal dan memadai. Maka berakibat pada pilihan masyarakat untuk tetap menggunakan
+                            kendaraan pribadi masih tinggi. Dan tentunya, pemerintah juga harus melakukan sosialisasi
+                            kepada masyarakat, agar kesadaran akan penggunaan transportasi umum bisa lebih meningkat.
+                            Namun, pada akhirnya itu semua kembali kepada kebutuhan masing-masing individu.</p>
+
+                        <p class="inden">
+                            Oke, sekian pembahasan mengenai kendaraan umum dan pribadi, semoga dengan artikel ini bisa membantu anda dalam 
+                            menentukan kendaraan mana yang lebih baik digunakan saat bepergian. Saya selaku admin <b>Belajar Bareng</b> mohon maaf bila ada salah dalam menyampaikan artikel ini baik secara tulisan maupun lain sebagainnya. Silahkan tinggalkan saran dan kritik anda dikolom komentar dibawah. Sekian terimakasih semoga membantu :).
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             <!-- Komentar -->
-            <section class="komentar">
+            <section class="komentar" id="ulasan">
                 <div class="panel-komen">
                     <div class="komen shadow-sm">
                         <!-- Header -->
@@ -314,60 +543,80 @@
                         </div>
                         <!-- Body Komen -->
                         <div class="body">
-                            <form action="" method="post">
+                            <form action="" method="post" name="submit-to-google-sheet">
                                 <div class="mb-3">
                                     <label for="nama-lengkap" class="form-label">Nama</label>
-                                    <input type="text" class="form-control" id="nama-lengkap" required>
+                                    <input type="text" name="nama" class="form-control" id="nama-lengkap" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="email@example.com" required>
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="email@example.com"
+                                        required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="komentar" class="form-label">Komentar</label>
-                                    <textarea class="form-control" id="komentar" rows="3" required></textarea>
+                                    <textarea name="komentar" class="form-control" id="komentar" rows="4" required></textarea>
                                 </div>
-                                <button type="button" class="btn tombol">Submit</button>
-                                
+                                <button type="submit" class="btn tombol kirim">Submit</button>
+
+                                <button class="btn btn-loading d-none" type="button">
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    Loading...
+                                </button>
                             </form>
                         </div>
                     </div>
                 </div>
             </section>
-        </main>
-        <!-- Akhir Main -->
+    </main>
+    <section class="modal-popup">
+        <div class="modal-box">
+          <i class="fa-regular fa-circle-check"></i>
+          <h2>Terima Kasih</h2>
+          <h3>Komentar anda sudah kami terima!</h3>
+  
+          <div class="buttons">
+            <button class="close-btn">Close</button>
+            <!-- <button>Open File</button> -->
+          </div>
+        </div>
+      </section>
+    <!-- Akhir Main -->
 
-        <!-- Awal Footer -->
-        <footer class="shadow-lg">
-            <div class="footer-container">
-                <p>Follow Us</p>
-                <div class="footer-sosial">
-                    <a href="https://www.facebook.com/bariklana123"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://instagram.com/tutorial_id.id?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://youtube.com/@Tutorial_1D"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://github.com/WongBiasa123"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <div class="footer-nav">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="index.html">Artikel</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </div>
+    <!-- Awal Footer -->
+    <footer class="shadow-lg">
+        <div class="footer-container">
+            <p>Follow Us</p>
+            <div class="footer-sosial">
+                <a href="https://www.facebook.com/bariklana123"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/tutorial_id.id?igshid=ZDdkNTZiNTM="><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com/@Tutorial_1D"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/WongBiasa123"><i class="fa-brands fa-github"></i></a>
             </div>
-            <div class="footer-bottom">
-                <a href="#">
-                    <span>Copyrigt &copy; 2023</span>
-                    <span>Belajar Bareng</span>
-                </a>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Artikel</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
             </div>
-        </footer>
-        <!-- Akhir Footer -->
+        </div>
+        <div class="footer-bottom">
+            <a href="#">
+                <span>Copyrigt &copy; 2023</span>
+                <span>Belajar Bareng</span>
+            </a>
+        </div>
+    </footer>
+    <!-- Akhir Footer -->
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-        <script src="JS/script.js"></script>
-    </body>
+    <script src="js/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
 </html>
-
-
